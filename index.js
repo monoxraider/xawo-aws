@@ -5,7 +5,6 @@ const bodyParser = require("body-parser");
 const instagramGetUrl = require("./ig");
 const serverless = require("serverless-http")
 
-const { igdl,fbdown} = require("btch-downloader");
 const Tiktok = require("@tobyg74/tiktok-api-dl")
 const { YTDL } = require("ytdl-easy");
 var ytdl = require("ytdl-core");
@@ -126,14 +125,14 @@ app.get("/twitter-downloader", async (req, res) => {
   res.json(data);
 });
 
-app.get("/facebook-downloader", async (req, res) => {
+/*app.get("/facebook-downloader", async (req, res) => {
   const inputValue = req.query.input;
   const facebookURL = inputValue;
 
   const data = await fbdown(facebookURL);
   console.log(data);
   res.json(data);
-});
+});*/
 
 app.listen(port, () => {
   console.log(`Listening on Port : http://localhost:${port}`);
