@@ -8,7 +8,6 @@ const serverless = require("serverless-http")
 const Tiktok = require("@tobyg74/tiktok-api-dl")
 const { YTDL } = require("ytdl-easy");
 var ytdl = require("ytdl-core");
-const igDL = require("ig-unduh");
 const { yt5s } = require("@sl-code-lords/youtube-dl");
 const { twitter } = require("imran-downloader-servar");
 
